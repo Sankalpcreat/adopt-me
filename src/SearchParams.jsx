@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";//hooks usestate for calling and useffect for api fetch and try
 import Results from "./Result";
 import useBreedList from "./useBreedList";
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
-  const [pets, setPets] = useState([]);
+  const [pets, setPets] = useState([]);//array default empty
   const [location, setLocation] = useState("");
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
@@ -15,7 +15,7 @@ const SearchParams = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function requestPets() {
-    const res = await fetch(
+    const res = await fetch(//try and catch the api with useeffect
       `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
     );
     const json = await res.json();

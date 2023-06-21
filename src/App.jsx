@@ -1,14 +1,14 @@
 import { createRoot } from "react-dom/client";
-import {Link,BrowserRouter,Routes,Route} from "react-router-dom"
+import {Link,BrowserRouter,Routes,Route} from "react-router-dom"//various hooks like routes route browerroutes which are use to render to other page
 import Details from "./Details";
 import SearchParams from "./SearchParams";
 
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
     <header>
-      <Link to="/">Adopt Me</Link>
+      <Link to="/">Adopt Me</Link>  
     </header>
     <h1>Adopt Me</h1>
       <Routes>  

@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 const Pet = (props) => {
     const { name, animal, breed, images, location, id } = props; //props to store the value
   
-    let hero = "http://pets-images.dev-apis.com/pets/none.jpg";
-    if (images.length) {
-      hero = images[0];
+    let hero = "http://pets-images.dev-apis.com/pets/none.jpg";//img link
+    if (images.length) {//lenght of image check
+      hero = images[0];//copy image to  the hero link from the props 
     }
   
     return (

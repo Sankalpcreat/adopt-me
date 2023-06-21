@@ -3,7 +3,7 @@ import Pet from "./Pet";
 const Results = ({ pets }) => {
   return (
     <div className="search">
-      {!pets.length ? (//until pet length is doesn react
+      {!pets.length ? (//if no one is present in array
         <h1>No Pets Found</h1>
       ) : (
         pets.map((pet) => {
